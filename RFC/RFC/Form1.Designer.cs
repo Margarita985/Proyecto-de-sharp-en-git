@@ -38,6 +38,7 @@ namespace RFC
 		{
 			this.lbl_nom2 = new System.Windows.Forms.Label();
 			this.lbl_rfc = new System.Windows.Forms.Label();
+			this.BtnSig = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// lbl_nom2
@@ -56,17 +57,29 @@ namespace RFC
 			this.lbl_rfc.TabIndex = 1;
 			this.lbl_rfc.Text = "__________";
 			// 
+			// BtnSig
+			// 
+			this.BtnSig.Location = new System.Drawing.Point(93, 164);
+			this.BtnSig.Name = "BtnSig";
+			this.BtnSig.Size = new System.Drawing.Size(75, 23);
+			this.BtnSig.TabIndex = 2;
+			this.BtnSig.Text = "Siguiente";
+			this.BtnSig.UseVisualStyleBackColor = true;
+			this.BtnSig.Click += new System.EventHandler(this.BtnSigClick);
+			// 
 			// Form2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(284, 261);
+			this.Controls.Add(this.BtnSig);
 			this.Controls.Add(this.lbl_rfc);
 			this.Controls.Add(this.lbl_nom2);
 			this.Name = "Form2";
 			this.Text = "Form2";
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.Button BtnSig;
 		private System.Windows.Forms.Label lbl_rfc;
 		private System.Windows.Forms.Label lbl_nom2;
 	}

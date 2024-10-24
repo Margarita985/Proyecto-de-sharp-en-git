@@ -2,7 +2,7 @@
  * Created by SharpDevelop.
  * User: marga
  * Date: 23/10/2024
- * Time: 08:39 p. m.
+ * Time: 11:19 p. m.
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
@@ -13,16 +13,12 @@ using System.Windows.Forms;
 namespace RFC
 {
 	/// <summary>
-	/// Description of Form1.
+	/// Description of Form3.
 	/// </summary>
-	public partial class Form2 : Form
+	public partial class Form3 : Form
 	{
-		public Form2(string text, string text2)
-			
+		public Form3()
 		{
-			InitializeComponent();
-			lbl_nom2.Text=text;
-			lbl_rfc.Text=text2;
 			//
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
@@ -33,17 +29,9 @@ namespace RFC
 			//
 		}
 		
-		
-		void Button1Click(object sender, EventArgs e)
+		void Label8Click(object sender, EventArgs e)
 		{
 			
 		}
-		
-		void BtnSigClick(object sender, EventArgs e)
-		{
-			Form3 Form3= new Form3();
-			Form3.Show();
-		}
 	}
 }
-
