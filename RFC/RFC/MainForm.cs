@@ -41,7 +41,7 @@ namespace RFC
 			     DateTime
 			fechadenacimiento=dateTimePicker1.Value;
 			 
-			     
+			     //ESTE APARTADO SIRVE PARA PODER SACAR EL RFC :))
 			     
 			     Random random= new Random();
 			     string h=random.Next(100000, 9999999).ToString("D6");
@@ -51,6 +51,8 @@ namespace RFC
 			          
 			          	
 		}
+		//ESTA PARTE NOS SIRVE PARA CUANDO EL USUARIO PRESIONE EL BOTON LIMPIAR
+		//ENTONSES EL PROGRAMA BORRARA LO ESCRITO ANTERIORMENTE
 		
 		void BtnLimpiarClick(object sender, EventArgs e)
 		{
