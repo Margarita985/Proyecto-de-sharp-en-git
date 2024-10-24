@@ -38,24 +38,32 @@ namespace RFC
 			string Telefono = TxtTelefono.Text;
 			string Direccion = TxtDireccion.Text;
 			string Semestre= comboBox1.SelectedItem.ToString();
+			if (Semestre == null)
+				return;
 			     DateTime
 			fechadenacimiento=dateTimePicker1.Value;
-			 
+			     
+			     
 			     //ESTE APARTADO SIRVE PARA PODER SACAR EL RFC :))
 			     
 			     Random random= new Random();
 			     string h=random.Next(100000, 9999999).ToString("D6");
 			     string RFC= ApellidoPaterno.Substring(0,2)+ ApellidoMaterno.Substring(0,1)+ Nombre.Substring(0,1)+ fechadenacimiento.ToString("yyMMdd")+ h.Substring(0,3);
-			     lblrfc.Text="RFC= "+ RFC;
+			     lblrfc.Text="RFC="+ RFC;
+			          
+			     
+			     string textToPass=TxtNombre.Text+""+TxtApellido1.Text+""+TxtApellido2.Text;
+			     string textToPass2=lblrfc.Text;
+			     Form2 Form2= new 
+			     	Form2(textToPass, textToPass2);
+			     Form2.Show();
+			     }  
 			          
 			          
-			          	
-		}
-		//ESTA PARTE NOS SIRVE PARA CUANDO EL USUARIO PRESIONE EL BOTON LIMPIAR
-		//ENTONSES EL PROGRAMA BORRARA LO ESCRITO ANTERIORMENTE
 		
 		void BtnLimpiarClick(object sender, EventArgs e)
 		{
+			
 			TxtApellido1.Text= "";
 			TxtApellido2.Text= "";
 			TxtDireccion.Text="";
@@ -65,5 +73,7 @@ namespace RFC
 			dateTimePicker1.Text="";
 			lblrfc.Text="";
 		}
+		}
+		
 	}
-}
+

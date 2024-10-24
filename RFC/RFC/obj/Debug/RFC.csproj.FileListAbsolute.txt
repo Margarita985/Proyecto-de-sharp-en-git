@@ -5,3 +5,4 @@ C:\Users\marga\Repo\RFC\RFC\obj\Debug\RFC.MainForm.resources
 C:\Users\marga\Repo\RFC\RFC\obj\Debug\RFC.csproj.GenerateResource.Cache
 C:\Users\marga\Repo\RFC\RFC\obj\Debug\RFC.exe
 C:\Users\marga\Repo\RFC\RFC\obj\Debug\RFC.pdb
+C:\Users\marga\Repo\RFC\RFC\obj\Debug\RFC.Form2.resources
