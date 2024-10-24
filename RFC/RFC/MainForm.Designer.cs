@@ -36,6 +36,7 @@ namespace RFC
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
@@ -57,6 +58,7 @@ namespace RFC
 			// 
 			// label1
 			// 
+			this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
 			this.label1.Location = new System.Drawing.Point(3, 39);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(100, 23);
@@ -65,6 +67,7 @@ namespace RFC
 			// 
 			// label2
 			// 
+			this.label2.BackColor = System.Drawing.SystemColors.ActiveCaption;
 			this.label2.Location = new System.Drawing.Point(3, 79);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(119, 23);
@@ -73,6 +76,7 @@ namespace RFC
 			// 
 			// label3
 			// 
+			this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
 			this.label3.Location = new System.Drawing.Point(3, 113);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(119, 23);
@@ -81,6 +85,7 @@ namespace RFC
 			// 
 			// label4
 			// 
+			this.label4.BackColor = System.Drawing.SystemColors.ActiveCaption;
 			this.label4.Location = new System.Drawing.Point(3, 152);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(100, 23);
@@ -89,6 +94,7 @@ namespace RFC
 			// 
 			// label5
 			// 
+			this.label5.BackColor = System.Drawing.SystemColors.ActiveCaption;
 			this.label5.Location = new System.Drawing.Point(3, 191);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(100, 23);
@@ -97,6 +103,7 @@ namespace RFC
 			// 
 			// label6
 			// 
+			this.label6.BackColor = System.Drawing.SystemColors.ActiveCaption;
 			this.label6.Location = new System.Drawing.Point(3, 241);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(100, 23);
@@ -105,6 +112,7 @@ namespace RFC
 			// 
 			// TxtNombre
 			// 
+			this.TxtNombre.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.TxtNombre.Location = new System.Drawing.Point(118, 42);
 			this.TxtNombre.Name = "TxtNombre";
 			this.TxtNombre.Size = new System.Drawing.Size(100, 20);
@@ -112,6 +120,7 @@ namespace RFC
 			// 
 			// TxtApellido1
 			// 
+			this.TxtApellido1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.TxtApellido1.Location = new System.Drawing.Point(118, 79);
 			this.TxtApellido1.Name = "TxtApellido1";
 			this.TxtApellido1.Size = new System.Drawing.Size(100, 20);
@@ -119,6 +128,7 @@ namespace RFC
 			// 
 			// TxtApellido2
 			// 
+			this.TxtApellido2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.TxtApellido2.Location = new System.Drawing.Point(118, 116);
 			this.TxtApellido2.Name = "TxtApellido2";
 			this.TxtApellido2.Size = new System.Drawing.Size(100, 20);
@@ -126,6 +136,7 @@ namespace RFC
 			// 
 			// TxtTelefono
 			// 
+			this.TxtTelefono.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.TxtTelefono.Location = new System.Drawing.Point(118, 155);
 			this.TxtTelefono.Name = "TxtTelefono";
 			this.TxtTelefono.Size = new System.Drawing.Size(100, 20);
@@ -133,6 +144,7 @@ namespace RFC
 			// 
 			// TxtDireccion
 			// 
+			this.TxtDireccion.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.TxtDireccion.Location = new System.Drawing.Point(118, 194);
 			this.TxtDireccion.Name = "TxtDireccion";
 			this.TxtDireccion.Size = new System.Drawing.Size(100, 20);
@@ -140,6 +152,7 @@ namespace RFC
 			// 
 			// comboBox1
 			// 
+			this.comboBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
 			this.comboBox1.FormattingEnabled = true;
 			this.comboBox1.Items.AddRange(new object[] {
 									"semestre 1",
@@ -162,26 +175,29 @@ namespace RFC
 			// 
 			// BtnLimpiar
 			// 
+			this.BtnLimpiar.BackColor = System.Drawing.SystemColors.ActiveCaption;
 			this.BtnLimpiar.Location = new System.Drawing.Point(12, 322);
 			this.BtnLimpiar.Name = "BtnLimpiar";
 			this.BtnLimpiar.Size = new System.Drawing.Size(75, 23);
 			this.BtnLimpiar.TabIndex = 13;
 			this.BtnLimpiar.Text = "LIMPIAR";
-			this.BtnLimpiar.UseVisualStyleBackColor = true;
+			this.BtnLimpiar.UseVisualStyleBackColor = false;
 			this.BtnLimpiar.Click += new System.EventHandler(this.BtnLimpiarClick);
 			// 
 			// BtnEjecutar
 			// 
+			this.BtnEjecutar.BackColor = System.Drawing.SystemColors.ActiveCaption;
 			this.BtnEjecutar.Location = new System.Drawing.Point(143, 322);
 			this.BtnEjecutar.Name = "BtnEjecutar";
 			this.BtnEjecutar.Size = new System.Drawing.Size(75, 23);
 			this.BtnEjecutar.TabIndex = 14;
 			this.BtnEjecutar.Text = "EJECUTAR";
-			this.BtnEjecutar.UseVisualStyleBackColor = true;
+			this.BtnEjecutar.UseVisualStyleBackColor = false;
 			this.BtnEjecutar.Click += new System.EventHandler(this.BtnEjecutarClick);
 			// 
 			// label7
 			// 
+			this.label7.BackColor = System.Drawing.SystemColors.ActiveCaption;
 			this.label7.Location = new System.Drawing.Point(3, 277);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(119, 23);
@@ -190,6 +206,7 @@ namespace RFC
 			// 
 			// lblrfc
 			// 
+			this.lblrfc.BackColor = System.Drawing.SystemColors.ActiveCaption;
 			this.lblrfc.Location = new System.Drawing.Point(278, 158);
 			this.lblrfc.Name = "lblrfc";
 			this.lblrfc.Size = new System.Drawing.Size(100, 23);
@@ -200,7 +217,8 @@ namespace RFC
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(440, 386);
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.ClientSize = new System.Drawing.Size(478, 395);
 			this.Controls.Add(this.lblrfc);
 			this.Controls.Add(this.label7);
 			this.Controls.Add(this.BtnEjecutar);

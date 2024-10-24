@@ -36,6 +36,7 @@ namespace RFC
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
@@ -52,7 +53,8 @@ namespace RFC
 			// 
 			// label1
 			// 
-			this.label1.Location = new System.Drawing.Point(12, 18);
+			this.label1.BackColor = System.Drawing.Color.AntiqueWhite;
+			this.label1.Location = new System.Drawing.Point(12, 9);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(100, 23);
 			this.label1.TabIndex = 0;
@@ -60,6 +62,7 @@ namespace RFC
 			// 
 			// label2
 			// 
+			this.label2.BackColor = System.Drawing.Color.Bisque;
 			this.label2.Location = new System.Drawing.Point(133, 18);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(100, 23);
@@ -68,6 +71,7 @@ namespace RFC
 			// 
 			// label3
 			// 
+			this.label3.BackColor = System.Drawing.Color.AntiqueWhite;
 			this.label3.Location = new System.Drawing.Point(12, 52);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(100, 23);
@@ -76,6 +80,7 @@ namespace RFC
 			// 
 			// label4
 			// 
+			this.label4.BackColor = System.Drawing.Color.Bisque;
 			this.label4.Location = new System.Drawing.Point(133, 52);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(100, 23);
@@ -84,6 +89,7 @@ namespace RFC
 			// 
 			// label5
 			// 
+			this.label5.BackColor = System.Drawing.Color.AntiqueWhite;
 			this.label5.Location = new System.Drawing.Point(12, 85);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(111, 23);
@@ -92,6 +98,7 @@ namespace RFC
 			// 
 			// label6
 			// 
+			this.label6.BackColor = System.Drawing.Color.Bisque;
 			this.label6.Location = new System.Drawing.Point(133, 85);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(139, 23);
@@ -100,6 +107,7 @@ namespace RFC
 			// 
 			// label7
 			// 
+			this.label7.BackColor = System.Drawing.Color.AntiqueWhite;
 			this.label7.Location = new System.Drawing.Point(12, 108);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(100, 23);
@@ -108,6 +116,7 @@ namespace RFC
 			// 
 			// label8
 			// 
+			this.label8.BackColor = System.Drawing.Color.Bisque;
 			this.label8.Location = new System.Drawing.Point(133, 108);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(100, 23);
@@ -117,6 +126,7 @@ namespace RFC
 			// 
 			// label9
 			// 
+			this.label9.BackColor = System.Drawing.Color.AntiqueWhite;
 			this.label9.Location = new System.Drawing.Point(12, 144);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(100, 23);
@@ -125,6 +135,7 @@ namespace RFC
 			// 
 			// label10
 			// 
+			this.label10.BackColor = System.Drawing.Color.Bisque;
 			this.label10.Location = new System.Drawing.Point(133, 144);
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(100, 23);
@@ -133,6 +144,7 @@ namespace RFC
 			// 
 			// label11
 			// 
+			this.label11.BackColor = System.Drawing.Color.AntiqueWhite;
 			this.label11.Location = new System.Drawing.Point(12, 182);
 			this.label11.Name = "label11";
 			this.label11.Size = new System.Drawing.Size(100, 23);
@@ -141,6 +153,7 @@ namespace RFC
 			// 
 			// label12
 			// 
+			this.label12.BackColor = System.Drawing.Color.Bisque;
 			this.label12.Location = new System.Drawing.Point(133, 182);
 			this.label12.Name = "label12";
 			this.label12.Size = new System.Drawing.Size(181, 23);
@@ -151,7 +164,8 @@ namespace RFC
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(339, 261);
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.ClientSize = new System.Drawing.Size(420, 233);
 			this.Controls.Add(this.label12);
 			this.Controls.Add(this.label11);
 			this.Controls.Add(this.label10);
@@ -166,6 +180,7 @@ namespace RFC
 			this.Controls.Add(this.label1);
 			this.Name = "Form3";
 			this.Text = "Form3";
+			this.Load += new System.EventHandler(this.Form3Load);
 			this.ResumeLayout(false);
 		}
 		private System.Windows.Forms.Label label12;

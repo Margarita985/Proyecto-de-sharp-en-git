@@ -36,6 +36,7 @@ namespace RFC
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
 			this.lbl_nom2 = new System.Windows.Forms.Label();
 			this.lbl_rfc = new System.Windows.Forms.Label();
 			this.BtnSig = new System.Windows.Forms.Button();
@@ -43,7 +44,8 @@ namespace RFC
 			// 
 			// lbl_nom2
 			// 
-			this.lbl_nom2.Location = new System.Drawing.Point(64, 21);
+			this.lbl_nom2.BackColor = System.Drawing.Color.Tan;
+			this.lbl_nom2.Location = new System.Drawing.Point(26, 9);
 			this.lbl_nom2.Name = "lbl_nom2";
 			this.lbl_nom2.Size = new System.Drawing.Size(208, 23);
 			this.lbl_nom2.TabIndex = 0;
@@ -51,7 +53,8 @@ namespace RFC
 			// 
 			// lbl_rfc
 			// 
-			this.lbl_rfc.Location = new System.Drawing.Point(68, 73);
+			this.lbl_rfc.BackColor = System.Drawing.Color.Tan;
+			this.lbl_rfc.Location = new System.Drawing.Point(26, 53);
 			this.lbl_rfc.Name = "lbl_rfc";
 			this.lbl_rfc.Size = new System.Drawing.Size(100, 23);
 			this.lbl_rfc.TabIndex = 1;
@@ -59,19 +62,21 @@ namespace RFC
 			// 
 			// BtnSig
 			// 
-			this.BtnSig.Location = new System.Drawing.Point(93, 164);
+			this.BtnSig.BackColor = System.Drawing.Color.SandyBrown;
+			this.BtnSig.Location = new System.Drawing.Point(71, 141);
 			this.BtnSig.Name = "BtnSig";
-			this.BtnSig.Size = new System.Drawing.Size(75, 23);
+			this.BtnSig.Size = new System.Drawing.Size(114, 38);
 			this.BtnSig.TabIndex = 2;
 			this.BtnSig.Text = "Siguiente";
-			this.BtnSig.UseVisualStyleBackColor = true;
+			this.BtnSig.UseVisualStyleBackColor = false;
 			this.BtnSig.Click += new System.EventHandler(this.BtnSigClick);
 			// 
 			// Form2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(284, 261);
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+			this.ClientSize = new System.Drawing.Size(276, 261);
 			this.Controls.Add(this.BtnSig);
 			this.Controls.Add(this.lbl_rfc);
 			this.Controls.Add(this.lbl_nom2);

@@ -33,5 +33,10 @@ namespace RFC
 		{
 			
 		}
+		
+		void Form3Load(object sender, EventArgs e)
+		{
+			
+		}
 	}
 }
